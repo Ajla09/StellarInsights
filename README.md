@@ -1,6 +1,6 @@
-Stellar Insights: Web Development Course Project
+ Stellar Insights: Web Development Course Project
 
-I'm delighted to present this project report, detailing the design and implementation of Celestial Harmony: Explore the Zodiac. This web application is designed to cater to astrology enthusiasts by offering features such as zodiac sign exploration, horoscope generation, interactive quizzes, and more.
+I'm delighted to present this project, detailing the design and implementation of Celestial Harmony: Explore the Zodiac. This web application is designed to cater to astrology enthusiasts by offering features such as zodiac sign exploration, horoscope generation, interactive quizzes, and more.
 
 Project Features 1. Homepage
 Description: Introduces visitors to the world of astrology and provides basic information about the website.
@@ -21,17 +21,12 @@ To set up this project locally, follow these steps:
 
 Clone the repository:
 
-bash
-Copy code
 git clone https://github.com/Ajla09/StellarInsights.git
 Navigate to the project directory:
-
-bash
-Copy code
 cd stellar-insights
 Open the index.html file in your web browser to explore the application.
 
-Usage
+
 Explore different zodiac signs and their characteristics.
 Generate horoscopes based on your birthdate.
 Participate in interactive quizzes to test your astrology knowledge.
