@@ -1,0 +1,566 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: "Galaxy";
+  src: url(/fonts/AmaticSC-Bold.ttf);
+}
+
+nav {
+  width: 100%;
+  min-height: 10vh;
+  font-size: 1.7rem;
+  background-color: rgba(22, 20, 20, 0.5);
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  font-family: "Galaxy", sans-serif;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.list ul {
+  width: 70rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  margin: 0.5rem;
+  margin-left: 1rem;
+}
+.logo2 {
+  margin: 0.5rem;
+  margin-right: 1rem;
+}
+.homepage {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 30%,
+    rgba(0, 108, 255, 1) 100%
+  );
+}
+@font-face {
+  font-family: "Pretty";
+  src: url(/fonts/GreatVibes-Regular.ttf);
+}
+
+.homepage h1 {
+  margin-top: 10rem;
+  font-size: 7rem;
+  font-family: "Galaxy", sans-serif;
+  color: white;
+}
+.homepage p {
+  font-size: 4rem;
+  color: white;
+  display: none;
+}
+.box {
+  width: 270px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.zodiac-sign {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Pretty", sans-serif;
+}
+
+.description {
+  margin-top: 10px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 7px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.cards p {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.box {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  justify-self: center;
+  align-self: center;
+}
+.box:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 35px,
+    rgba(0, 0, 0, 0.23) 0px 6px 20px;
+}
+#horoscope-generator {
+  min-height: 110vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0.9rem;
+  background-image: url("/img/try2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#horoscope-generator p {
+  color: white;
+}
+#horoscope-generator h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+#horoscope-generator h2,
+p {
+  color: white;
+  font-family: "Galaxy", sans-serif;
+}
+.container {
+  width: 400px;
+  margin: 0 auto;
+  background-color: rgba(22, 20, 20, 0.5);
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+
+  margin-top: 1rem;
+}
+
+.container h1 {
+  color: white;
+  margin: 0 0 20px;
+  font-weight: lighter;
+  text-align: center;
+}
+#horoscopeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-weight: lighter;
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 70%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: rgba(22, 20, 20, 0.5);
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  margin-top: 1.5rem;
+}
+
+button:hover {
+  background-color: #061320;
+}
+
+#horoscope {
+  margin-top: 1rem;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#horoscope p {
+  margin: 0;
+  color: black;
+  font-size: 2rem;
+}
+
+#quiz {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+}
+#quiz h2 {
+  font-family: "Galaxy", sans-serif;
+  font-weight: lighter;
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  color: black;
+}
+#quiz p {
+  color: black;
+  font-size: 2rem;
+}
+#quiz-container {
+  width: 40%;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(22, 20, 20, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Galaxy", sans-serif;
+}
+
+#question-container {
+  margin-top: 20px;
+}
+
+#question {
+  font-size: 20px;
+}
+
+#answers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.answer {
+  margin-bottom: 10px;
+}
+
+label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  display: inline;
+  margin-right: 5px;
+}
+
+span {
+  display: block;
+  padding: 10px 20px;
+  background-color: #ddd;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#next-button {
+  margin-top: 20px;
+  background-color: rgba(22, 20, 20, 0.5);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Galaxy", sans-serif;
+  font-size: 2rem;
+}
+
+#next-button:hover {
+  background-color: #0056a9;
+}
+
+#result-container {
+  display: none;
+  margin-top: 20px;
+}
+
+#result {
+  font-size: 24px;
+  text-align: center;
+}
+.tryagain-button {
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: "Galaxy", sans-serif;
+  margin-left: 2rem;
+}
+#result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#result-container {
+  display: none;
+}
+#contact h2,
+p {
+  color: black;
+}
+#contact h2 {
+  font-family: "Galaxy", sans-serif;
+  font-size: 3rem;
+}
+#contact {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.form {
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group input,
+.input-group textarea {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin: 5px 0;
+  padding: 5px;
+  outline: none;
+}
+
+.form button {
+  border: none;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: "Galaxy", sans-serif;
+  font-size: 1.2rem;
+}
+#answers {
+  font-family: "Galaxy", sans-serif;
+  font-size: 1.5rem;
+}
+#horoscopeForm {
+  font-family: "Galaxy", sans-serif;
+  font-size: 2rem;
+}
+#horoscopeForm button {
+  font-family: "Galaxy", sans-serif;
+  font-size: 2rem;
+}
+.product-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.product-preview .preview {
+  border-radius: 10px;
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  margin: 2rem;
+  width: 30rem;
+  height: 420px;
+  background-color: rgba(22, 20, 20, 0.8);
+  color: white;
+}
+.product-preview .preview h1 {
+  margin-bottom: 1.5rem;
+}
+.product-preview .preview.active {
+  display: inline-block;
+}
+
+.product-preview .preview img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.product-preview .preview img {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  color: #884a39;
+}
+.product-preview .preview li {
+  font-size: 1.3rem;
+  list-style: none;
+}
+.picon {
+  width: 30px;
+}
+@media screen and (max-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    width: 100%;
+
+    background-color: rgba(22, 20, 20, 0.5);
+
+    display: flex;
+
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  .homepage {
+    width: 100%;
+    min-height: 80vh;
+  }
+  .homepage h1 {
+    font-size: 2rem;
+  }
+  .homepage p {
+    font-size: 1.3rem;
+  }
+  #quiz-container {
+    width: 29rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  #quiz {
+    min-height: 30vh;
+  }
+  #contact {
+    height: 30vh;
+  }
+  #contact h2 {
+    font-size: 1.9rem;
+    margin-left: 3rem;
+  }
+  #contact img {
+    height: 60px;
+    width: 60px;
+  }
+  .homepage {
+    min-height: 50vh;
+  }
+  .preview.active {
+    height: 80%;
+  }
+  #horoscope-generator h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .container {
+    align-items: center;
+    width: 80%;
+    margin: zero;
+  }
+  .container h1 {
+    font-size: 1.9rem;
+  }
+  #quiz-container {
+    width: 100%;
+  }
+  #quiz h2 {
+    margin-left: 2rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .cards {
+    margin: 0 auto;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .homepage {
+    min-height: 70vh;
+  }
+  .homepage h1 {
+    margin-top: 10rem;
+  }
+  #quiz {
+    text-align: center;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    align-content: center;
+  }
+  nav li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #horoscope-generator {
+    min-height: 70vh;
+  }
+}

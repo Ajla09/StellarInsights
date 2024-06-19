@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stellar Insights: Your Astrology Hub</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/img/crystal-ball.png" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          id="logo"
+          src="/img/crystal-ball.png"
+          alt=""
+          height="50px"
+          width="50px"
+        />
+      </div>
+
+      <div class="list">
+        <ul>
+          <li><a href="#homepage">Home</a></li>
+          <li><a href="#zodiac-display">Zodiac Sign Display</a></li>
+          <li><a href="#horoscope-generator">Horoscope Generator</a></li>
+          <li><a href="#quiz">Interactive Quiz</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="logo2">
+        <img
+          id="logo2"
+          src="/img/crystal-ball.png"
+          alt=""
+          height="50px"
+          width="50px"
+        />
+      </div>
+    </nav>
+
+    <!-- Homepage -->
+    <section class="homepage">
+      <h1>
+        Celestial Harmony <br />
+        Explore the Zodiac
+      </h1>
+      <p>
+        Astrology is like a cosmic GPS for your life, <br />
+        where the positions and dances of celestial bodies, like planets and
+        stars, guide your journey.
+      </p>
+    </section>
+
+    <div class="cards">
+      <!-- za svaki card stavljas data name koji mora biti jednak data trarget -->
+      <div class="card1 box" data-name="p-1">
+        <img class src="/img/law.png" height="60px" width="60px" alt="" />
+        <div class="zodiac-sign">Libra</div>
+        <div class="description">
+          <p>Air Sign</p>
+          <p>Social Butterfly</p>
+          <p>Indicisive</p>
+        </div>
+      </div>
+      <div class="card2 box" data-name="p-2">
+        <img src="/img/aquarius (1).png" height="60px" width="60px" alt="" />
+        <div class="zodiac-sign">Aquarius</div>
+        <div class="description">
+          <p>Air Sign</p>
+          <p>Indenpendent</p>
+          <p>Free-Spirited</p>
+        </div>
+      </div>
+      <div class="card3 box" data-name="p-3">
+        <img src="/img/gemini (1).png" height="60px" width="60px" alt="" />
+        <div class="zodiac-sign">Gemini</div>
+        <div class="description">
+          <p>Air Sign</p>
+          <p>Social</p>
+          <p>Two-Faced</p>
+        </div>
+      </div>
+      <div class="card4 box" data-name="p-4">
+        <img src="/img/virgo.png" height="60px" width="60px" alt="" />
+        <div class="zodiac-sign">Virgo</div>
+        <div class="description">
+          <p>Earth Sign</p>
+          <p>Overthinkers</p>
+          <p>Critical</p>
+        </div>
+      </div>
+      <div class="card5 box" data-name="p-5">
+        <img src="/img/taurus.png" height="60px" width="60px" alt="" />
+        <div class="zodiac-sign">Taurus</div>
+        <div class="description">
+          <p>Earth Sign</p>
+          <p>Hedonist</p>
+          <p>Stubborn</p>
+        </div>
+      </div>
+      <div class="card6 box" data-name="p-6">
+        <img src="/img/capricorn.png" height="60px" width="60px" alt="" />
+        <div class="zodiac-sign">Capricorn</div>
+        <div class="description">
+          <p>Earth Sign</p>
+          <p>Grounded</p>
+          <p>Pessimistic</p>
+        </div>
+      </div>
+      <div class="card7 box" data-name="p-7">
+        <img src="/img/crab.png" height="60px" width="60px" alt="" />
+        <div class="zodiac-sign">Cancer</div>
+        <div class="description">
+          <p>Water Sign</p>
+          <p>Emotional</p>
+          <p>Family-Oriented</p>
+        </div>
+      </div>
+      <div class="card8 box" data-name="p-8">
+        <img src="/img/pisces.png" height="60px" width="60px" alt="" />
+        <div class="zodiac-sign">Pisces</div>
+        <div class="description">
+          <p>Water Sign</p>
+          <p>Artistic</p>
+          <p>Intuitive</p>
+        </div>
+      </div>
+      <div class="card9 box" data-name="p-9">
+        <img src="/img/scorpio.png" height="60px" width="60px" alt="" />
+        <div class="zodiac-sign">Scorpio</div>
+        <div class="description">
+          <p>Water Sign</p>
+          <p>Brave</p>
+          <p>Passionate</p>
+        </div>
+      </div>
+      <div class="card10 box" data-name="p-10">
+        <img src="/img/sagittarius.png" height="60px" width="60px" alt="" />
+        <div class="zodiac-sign">Sagittarius</div>
+        <div class="description">
+          <p>Fire Sign</p>
+          <p>Idealistic</p>
+          <p>Impatient</p>
+        </div>
+      </div>
+      <div class="card11 box" data-name="p-11">
+        <img src="/img/leo.png" height="60px" width="60px" alt="" />
+        <div class="zodiac-sign">Leo</div>
+        <div class="description">
+          <p>Fire Sign</p>
+          <p>Cheerful</p>
+          <p>Generous</p>
+        </div>
+      </div>
+      <div class="card12 box" data-name="p-12">
+        <img src="/img/astrology (2).png" height="60px" width="60px" alt="" />
+        <div class="zodiac-sign">Aries</div>
+        <div class="description">
+          <p>Fire Sign</p>
+          <p>Courageous</p>
+          <p>Impulsive</p>
+        </div>
+      </div>
+    </div>
+
+    <section id="horoscope-generator">
+      <h2>You want to see what zodiac sign you are?</h2>
+      <p>Input your birthdate to find out!</p>
+      <div class="container">
+        <h1>Horoscope Generator</h1>
+        <form id="horoscopeForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+          <label for="birthdate">Birthdate:</label>
+          <input type="date" id="birthdate" required />
+          <button type="button" onclick="generateHoroscope()">Generate</button>
+        </form>
+        <div id="horoscope"></div>
+      </div>
+    </section>
+
+    <!-- Interactive Quiz -->
+    <section id="quiz">
+      <h2>Want to test your knowledge?</h2>
+      <p>Interact in Stellar Insights Quiz!</p>
+
+      <div id="quiz-container">
+        <h1>Zodiac Signs Quiz</h1>
+        <div id="question-container">
+          <p id="question"></p>
+          <div id="answers">
+            <label class="answer">
+              <input type="radio" name="answer" value="A" />
+              <span></span>
+            </label>
+            <label class="answer">
+              <input type="radio" name="answer" value="B" />
+              <span></span>
+            </label>
+            <label class="answer">
+              <input type="radio" name="answer" value="C" />
+              <span></span>
+            </label>
+          </div>
+        </div>
+        <button id="next-button">Next</button>
+      </div>
+      <div id="result-container">
+        <p id="result"></p>
+      </div>
+
+      <!--quiz questions and form here - CSS and JS -->
+    </section>
+
+    <!-- Contact Form -->
+    <section
+      id="contact"
+      class="w-80 min-h-40vh flex justify-center mx-auto items-center"
+    >
+      <form class="form border-b-2 pb-5">
+        <h2 class="font-galaxy text-3xl">CONTACT US</h2>
+        <div class="input-group">
+          <p type="Name:" class="mb-5">
+            <input
+              placeholder="Name"
+              class="border-none border-b-2 pb-1 outline-none"
+            />
+          </p>
+          <p type="Email:" class="mb-5">
+            <input
+              placeholder="Email"
+              class="border-none border-b-2 pb-1 outline-none"
+            />
+          </p>
+          <p type="Message:" class="mb-5">
+            <input
+              placeholder="Write us a message!"
+              class="border-none border-b-2 pb-1 outline-none"
+            />
+          </p>
+        </div>
+        <button
+          class="bg-black text-white py-2 px-4 mt-3 font-galaxy text-lg cursor-pointer"
+        >
+          Send Message
+        </button>
+      </form>
+      <div class="other-section">
+        <img
+          src="/img/crystal-ball.png"
+          alt=""
+          height="70px"
+          width="70px"
+          class="h-16 w-16"
+        />
+      </div>
+    </section>
+
+    <!-- u p p stavljas sve kartice samo mijenjas data target -->
+    <div class="product-preview">
+      <div class="preview" data-target="p-1">
+        <img
+          class="picon"
+          src="/img/user.png"
+          height="30px"
+          width="30px"
+          alt=""
+        />
+        <h1>Libra</h1>
+        <ul>
+          <li>
+            Strengths: Cooperative,diplomatic, gracious, fair-minded, social
+          </li>
+
+          <li>
+            Weaknesses: Indecisive, avoids confrontations, will carry a grudge,
+            self-pity
+          </li>
+
+          <li>
+            Libra likes: Harmony, gentleness, sharing with others, the outdoors
+          </li>
+
+          <li>Libra dislikes: Violence, injustice, loudmouths, conformity</li>
+        </ul>
+      </div>
+      <div class="preview" data-target="p-2">
+        <img
+          class="picon"
+          src="/img/user.png"
+          height="30px"
+          width="30px"
+          alt=""
+        />
+        <h1>Aquarius</h1>
+        <ul>
+          <li>Strengths: Progressive, original, independent, humanitarian</li>
+
+          <li>
+            Weaknesses: Runs from emotional expression, temperamental,
+            uncompromising, aloof
+          </li>
+
+          <li>
+            Aquarius likes: Fun with friends, risky business, fighting for
+            causes, intellectual conversations.
+          </li>
+
+          <li>
+            Aquarius dislikes: Limitations, broken promises, being lonely, dull
+            or boring situations
+          </li>
+        </ul>
+      </div>
+      <div class="preview" data-target="p-3">
+        <img
+          class="picon"
+          src="/img/user.png"
+          height="30px"
+          width="30px"
+          alt=""
+        />
+        <h1>Gemini</h1>
+        <ul>
+          <li>
+            Strengths: Gentle, affectionate, curious, adaptable, ability to
+            learn quickly and exchange ideas
+          </li>
+
+          <li>Weaknesses: Nervous, inconsistent, indecisive</li>
+
+          <li>
+            Gemini likes: Music, books, magazines, chats with nearly anyone,
+            short trips around the town
+          </li>
+
+          <li>
+            Gemini dislikes: Being alone, being confined, repetition and routine
+          </li>
+        </ul>
+      </div>
+      <div class="preview" data-target="p-4">
+        <img
+          class="picon"
+          src="/img/user.png"
+          height="30px"
+          width="30px"
+          alt=""
+        />
+        <h1>Virgo</h1>
+        <ul>
+          <li>Strengths: Loyal, analytical, kind, hardworking, practical</li>
+
+          <li>
+            Weaknesses: Shyness, worry, overly critical of self and others, all
+            work and no play
+          </li>
+
+          <li>
+            Virgo likes: Animals, healthy food, books, nature, cleanliness
+          </li>
+
+          <li>
+            Virgo dislikes: Rudeness, asking for help, taking center stage
+          </li>
+        </ul>
+      </div>
+      <div class="preview" data-target="p-5">
+        <img
+          class="picon"
+          src="/img/user.png"
+          height="30px"
+          width="30px"
+          alt=""
+        />
+        <h1>Taurus</h1>
+        <ul>
+          <li>
+            Strengths: Reliable, patient, practical, devoted, responsible,
+            stable
+          </li>
+
+          <li>Weaknesses: Stubborn, possessive, uncompromising</li>
+
+          <li>
+            Taurus likes: Gardening, cooking, music, romance, high quality
+            clothes, working with hands
+          </li>
+
+          <li>
+            Taurus dislikes: Sudden changes, complications, insecurity of any
+            kind, synthetic fabrics
+          </li>
+        </ul>
+      </div>
+      <div class="preview" data-target="p-6">
+        <img
+          class="picon"
+          src="/img/user.png"
+          height="30px"
+          width="30px"
+          alt=""
+        />
+
+        <h1>Capricorn</h1>
+        <ul>
+          <li>
+            Strengths: Responsible, disciplined, self-control, good managers
+          </li>
+
+          <li>
+            Weaknesses: Know-it-all, unforgiving, condescending, expecting the
+            worst
+          </li>
+
+          <li>
+            Capricorn likes: Family, tradition, music, understated status,
+            quality craftsmanship
+          </li>
+
+          <li>Capricorn dislikes: Almost everything at some point</li>
+        </ul>
+      </div>
+      <div class="preview" data-target="p-7">
+        <img
+          class="picon"
+          src="/img/user.png"
+          height="30px"
+          width="30px"
+          alt=""
+        />
+        <h1>Cancer</h1>
+        <ul>
+          <li>
+            Strengths: Tenacious, highly imaginative, loyal, emotional,
+            sympathetic, persuasive
+          </li>
+
+          <li>
+            Weaknesses: Moody, pessimistic, suspicious, manipulative, insecure
+          </li>
+
+          <li>
+            Cancer likes: Art, home-based hobbies, relaxing near or in water,
+            helping loved ones, a good meal with friends
+          </li>
+
+          <li>
+            Cancer dislikes: Strangers, any criticism of Mom, revealing of
+            personal life
+          </li>
+        </ul>
+      </div>
+      <div class="preview" data-target="p-8">
+        <img
+          class="picon"
+          src="/img/user.png"
+          height="30px"
+          width="30px"
+          alt=""
+        />
+        <h1>Pisces</h1>
+        <ul>
+          <li>
+            Strengths: Compassionate, artistic, intuitive, gentle, wise, musical
+          </li>
+
+          <li>
+            Weaknesses: Fearful, overly trusting, sad, desire to escape reality,
+            can be a victim or a martyr
+          </li>
+
+          <li>
+            Pisces likes: Being alone, love, sleeping, music, romance, swimming,
+            spiritual themes
+          </li>
+
+          <li>
+            Pisces dislikes: Know-it-all, being criticized, the past coming back
+            to haunt, cruelty of any kind
+          </li>
+        </ul>
+      </div>
+      <div class="preview" data-target="p-9">
+        <img
+          class="picon"
+          src="/img/user.png"
+          height="30px"
+          width="30px"
+          alt=""
+        />
+        <h1>Scorpio</h1>
+        <ul>
+          <li>
+            Strengths: Resourceful, powerful, brave, passionate, a true friend
+          </li>
+
+          <li>Weaknesses: Distrusting, jealous, manipulative, violent</li>
+
+          <li>
+            Scorpio likes: Truth, facts, being right, talents, teasing, passion
+          </li>
+
+          <li>
+            Scorpio dislikes: Dishonesty, revealing secrets, superficiality,
+            small talk
+          </li>
+        </ul>
+      </div>
+      <div class="preview" data-target="p-10">
+        <img
+          class="picon"
+          src="/img/user.png"
+          height="30px"
+          width="30px"
+          alt=""
+        />
+        <h1>Saggitarius</h1>
+        <ul>
+          <li>Strengths: Generous, idealistic, great sense of humor</li>
+
+          <li>
+            Weaknesses: Promises more than can deliver, very impatient, will say
+            anything no matter how undiplomatic
+          </li>
+
+          <li>
+            Sagittarius likes: Freedom, travel, philosophy, being outdoors
+          </li>
+
+          <li>
+            Sagittarius dislikes: Clingy people, being constrained, off-the-wall
+            theories, details
+          </li>
+        </ul>
+      </div>
+      <div class="preview" data-target="p-11">
+        <img
+          class="picon"
+          src="/img/user.png"
+          height="30px"
+          width="30px"
+          alt=""
+        />
+        <h1>Leo</h1>
+        <ul>
+          <li>
+            Strengths: Creative, passionate, generous, warm-hearted, cheerful,
+            humorous
+          </li>
+
+          <li>
+            Weaknesses: Arrogant, stubborn, self-centered, lazy, inflexible
+          </li>
+
+          <li>
+            Leo likes: Theater, taking holidays, being admired, expensive
+            things, bright colors, fun with friends
+          </li>
+
+          <li>
+            Leo dislikes: Being ignored, facing difficult reality, not being
+            treated like a king or queen
+          </li>
+        </ul>
+      </div>
+      <div class="preview" data-target="p-12">
+        <img
+          class="picon"
+          src="/img/user.png"
+          height="30px"
+          width="30px"
+          alt=""
+        />
+        <h1>Aries</h1>
+        <ul>
+          <li>
+            Strengths: Courageous, determined, confident, enthusiastic,
+            optimistic, honest, passionate
+          </li>
+
+          <li>
+            Weaknesses: Impatient, moody, short-tempered, impulsive, aggressive
+          </li>
+
+          <li>
+            Aries likes: Comfortable clothes, taking on leadership roles,
+            physical challenges, individual sports
+          </li>
+
+          <li>
+            Aries dislikes: Inactivity, delays, work that does not use one's
+            talents
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
